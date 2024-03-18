@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+    font-family: "Shadows Into Light", cursive;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calculadora-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ffffff;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: #202020;
+    box-shadow: 2px 2px 5px 0.1px rgba(0,0,0,0.4);
+}
+
+.calculadora-input {
+    width: 92%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    border-radius: 5px;
+    border: 1px solid #202020;
+    padding-top: 5px;
+}
+
+.calculadora-botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.calculadora-botao {
+    padding: 15px;
+    font-size: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border: none;
+    width: 95%;
+    border-radius: 4px;
+    box-shadow: 2px 5px ;
+}
+
+.calculadora-botao.hover {
+    transform: translateY(2px);
+    background-color: #e0e0e0;
+}
+
+.calculadora-operador {
+    background-color: rgb(59, 80, 80);
+    color: aliceblue;
+        border-radius: 4px;
+}
+
+.calculadora-operador:hover {
+    background-color: darkorange;
+    color: aliceblue;
+}
+
+.calculadora-botao-clear,
+.calculadora-botao-0,
+.calculadora-botao-igual {
+    background-color: darkorange;
+    color: white;
+    box-shadow: none;
+}
+
+.calculadora-botao-clear:hover,
+.calculadora-botao-0:hover,
+.calculadora-botao-igual:hover {
+    background-color: rgb(255, 173, 73);
+    box-shadow: none;
+}
